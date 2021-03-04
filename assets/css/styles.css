@@ -1,0 +1,148 @@
+
+
+.grid-layout {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -10px;
+	margin-left: -10px;
+}
+.grid-layout > * {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+@media (min-width: 769px) {
+	.grid-lg-1 > * {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.grid-lg-2 > * {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	.grid-lg-3 > * {
+		flex: 0 0 33.33%;
+		max-width: 33.33%;
+	}
+	.grid-lg-4 > * {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.grid-lg-5 > * {
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+	.grid-lg-6 > * {
+		flex: 0 0 16.66%;
+		max-width: 16.66%;
+	}
+}
+@media (max-width: 768px) and (min-width: 361px) {
+	.grid-md-1 > * {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.grid-md-2 > * {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	.grid-md-3 > * {
+		flex: 0 0 33.33%;
+		max-width: 33.33%;
+	}
+	.grid-md-4 > * {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.grid-md-5 > * {
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+	.grid-md-6 > * {
+		flex: 0 0 16.66%;
+		max-width: 16.66%;
+	}
+}
+@media (max-width: 360px) {
+	.grid-1 > * {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.grid-2 > * {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	.grid-3 > * {
+		flex: 0 0 33.33%;
+		max-width: 33.33%;
+	}
+	.grid-4 > * {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+	.grid-5 > * {
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+	.grid-6 > * {
+		flex: 0 0 16.66%;
+		max-width: 16.66%;
+	}
+}
+ul.products.grid-layout {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.site-main ul.products.grid-layout li.product, ul.products.grid-layout li.product {
+	margin-right: 0px;
+}
+.carousel-layout li {
+	list-style: none;
+	text-align: center;
+}
+.carousel-layout li .price{
+	display: block;
+}
+
+.hentry .entry-content .carousel-layout a {
+	text-decoration: none;
+	outline: none;
+}
+.carousel-layout .owl-nav {
+	opacity: 0;
+	transition: all 0.3s;
+}
+.carousel-layout:hover .owl-nav {
+	opacity: 1;
+}
+.carousel-layout .owl-nav button[class^="owl-"] {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    color: #fff;
+    line-height: 50px;
+    border-radius: 50px;
+    transform: translateY(-50%);
+    outline: none;
+    margin: 0px;
+	transition: all 0.3s;
+}
+.carousel-layout .owl-nav button[class^="owl-"]:hover {
+	background: #aaa;
+}
+.carousel-layout .owl-nav button.owl-prev {
+    left: 0px;
+
+}
+.carousel-layout .owl-nav button.owl-next {
+    right: 0px;
+}
+
+.carousel-layout .owl-nav span {
+    line-height: 45px;
+    height: 50px;
+    display: block;
+}
