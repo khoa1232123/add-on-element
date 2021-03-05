@@ -48,6 +48,7 @@ if( ! defined( 'ABSPATH' ) ) exit();
         // Call Constants Method
       $this->define_constants();
       add_action( 'wp_enqueue_scripts', [ $this, 'scripts_styles' ] );
+      add_action( 'init', [ $this, 'i18n' ] );
       add_action( 'plugins_loaded', [ $this, 'init' ] );
     }
 
@@ -109,9 +110,9 @@ if( ! defined( 'ABSPATH' ) ) exit();
     * Load Text Domain
     * @since 1.0.0
     */
-    // public function i18n() {
-    //    load_plugin_textdomain( 'add-on-element', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-    // }
+    public function i18n() {
+       load_plugin_textdomain( 'add-on-element', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+    }
     
     /**
     * Init Widgets
