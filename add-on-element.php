@@ -122,6 +122,7 @@ if( ! defined( 'ABSPATH' ) ) exit();
       require_once AOE_PLUGIN_PATH . '/helpers/helpers.php';
       require_once AOE_PLUGIN_PATH . '/widgets/aoe-base.php';
       require_once AOE_PLUGIN_PATH . '/widgets/aoe-posts.php';
+      require_once AOE_PLUGIN_PATH . '/widgets/aoe-posts-carousel.php';
       if (class_exists('WooCommerce')) {
           require AOE_PLUGIN_PATH . '/widgets/aoe-products.php';
           require AOE_PLUGIN_PATH . '/widgets/aoe-products-carousel.php';

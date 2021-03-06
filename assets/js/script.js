@@ -1,6 +1,6 @@
 !function($){"use strict";
 
-	function logoCarousel($scope,$){
+	function productCarousel($scope,$){
 		var $_this=$scope.find(".carousel-layout");
 		var $currentID="#"+$_this.attr("id");
 		var $loop=$_this.data("loop");
@@ -37,7 +37,7 @@
 		})
 	}
 	$(window).on("elementor/frontend/init", function(){
-		elementorFrontend.hooks.addAction("frontend/element_ready/aoe-products-carousel.default",logoCarousel)
-		elementorFrontend.hooks.addAction("frontend/element_ready/aoe-posts-carousel.default",logoCarousel)
+		elementorFrontend.hooks.addAction("frontend/element_ready/aoe-posts-carousel.default", productCarousel)
+		elementorFrontend.hooks.addAction("frontend/element_ready/aoe-products-carousel.default", productCarousel)
 	})
 }(jQuery);
